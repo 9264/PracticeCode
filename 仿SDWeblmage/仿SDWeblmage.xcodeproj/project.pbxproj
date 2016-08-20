@@ -13,6 +13,7 @@
 		0836CA311D687D860025C9CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0836CA2F1D687D860025C9CE /* Main.storyboard */; };
 		0836CA331D687D860025C9CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0836CA321D687D860025C9CE /* Assets.xcassets */; };
 		0836CA361D687D860025C9CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0836CA341D687D860025C9CE /* LaunchScreen.storyboard */; };
+		0836CA401D687E810025C9CE /* DownloadOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0836CA3F1D687E810025C9CE /* DownloadOperation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		0836CA321D687D860025C9CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0836CA351D687D860025C9CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0836CA371D687D860025C9CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0836CA3E1D687E810025C9CE /* DownloadOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadOperation.h; sourceTree = "<group>"; };
+		0836CA3F1D687E810025C9CE /* DownloadOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloadOperation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,7 @@
 		0836CA251D687D860025C9CE /* 仿SDWeblmage */ = {
 			isa = PBXGroup;
 			children = (
+				0836CA3D1D687E1F0025C9CE /* JNWeblmage */,
 				0836CA291D687D860025C9CE /* AppDelegate.h */,
 				0836CA2A1D687D860025C9CE /* AppDelegate.m */,
 				0836CA2C1D687D860025C9CE /* ViewController.h */,
@@ -77,6 +81,15 @@
 				0836CA271D687D860025C9CE /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0836CA3D1D687E1F0025C9CE /* JNWeblmage */ = {
+			isa = PBXGroup;
+			children = (
+				0836CA3E1D687E810025C9CE /* DownloadOperation.h */,
+				0836CA3F1D687E810025C9CE /* DownloadOperation.m */,
+			);
+			path = JNWeblmage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,6 +166,7 @@
 				0836CA2E1D687D860025C9CE /* ViewController.m in Sources */,
 				0836CA2B1D687D860025C9CE /* AppDelegate.m in Sources */,
 				0836CA281D687D860025C9CE /* main.m in Sources */,
+				0836CA401D687E810025C9CE /* DownloadOperation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
