@@ -20,6 +20,7 @@
     NSURL *url = [NSURL URLWithString:self.URLString];
     NSData *data = [NSData dataWithContentsOfURL:url];
     UIImage *image = [UIImage imageWithData:data];
+    NSAssert(self.finishedBlock != nil, @"下载完成的回调不能为空!");
     [[NSOperationQueue mainQueue]addOperationWithBlock:^{
         self.finishedBlock(image);
     }];
