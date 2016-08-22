@@ -35,6 +35,8 @@
 		08AEF25D1D6B1C3B0000A695 /* UIImageView+HighlightedWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 08AEF2451D6B1C3B0000A695 /* UIImageView+HighlightedWebCache.m */; };
 		08AEF25E1D6B1C3B0000A695 /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 08AEF2471D6B1C3B0000A695 /* UIImageView+WebCache.m */; };
 		08AEF25F1D6B1C3B0000A695 /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 08AEF2491D6B1C3B0000A695 /* UIView+WebCacheOperation.m */; };
+		08AEF2621D6B20AD0000A695 /* LYModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 08AEF2611D6B20AD0000A695 /* LYModel.m */; };
+		08AEF2651D6B24C40000A695 /* LYViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 08AEF2641D6B24C40000A695 /* LYViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -94,6 +96,10 @@
 		08AEF2471D6B1C3B0000A695 /* UIImageView+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+WebCache.m"; sourceTree = "<group>"; };
 		08AEF2481D6B1C3B0000A695 /* UIView+WebCacheOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+WebCacheOperation.h"; sourceTree = "<group>"; };
 		08AEF2491D6B1C3B0000A695 /* UIView+WebCacheOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WebCacheOperation.m"; sourceTree = "<group>"; };
+		08AEF2601D6B20AD0000A695 /* LYModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYModel.h; sourceTree = "<group>"; };
+		08AEF2611D6B20AD0000A695 /* LYModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYModel.m; sourceTree = "<group>"; };
+		08AEF2631D6B24C40000A695 /* LYViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYViewCell.h; sourceTree = "<group>"; };
+		08AEF2641D6B24C40000A695 /* LYViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +143,10 @@
 				08AEF2111D6B1A2D0000A695 /* LaunchScreen.storyboard */,
 				08AEF2141D6B1A2D0000A695 /* Info.plist */,
 				08AEF2031D6B1A2D0000A695 /* Supporting Files */,
+				08AEF2601D6B20AD0000A695 /* LYModel.h */,
+				08AEF2611D6B20AD0000A695 /* LYModel.m */,
+				08AEF2631D6B24C40000A695 /* LYViewCell.h */,
+				08AEF2641D6B24C40000A695 /* LYViewCell.m */,
 			);
 			path = "异步下载网络图片";
 			sourceTree = "<group>";
@@ -290,10 +300,12 @@
 				08AEF2081D6B1A2D0000A695 /* AppDelegate.m in Sources */,
 				08AEF2551D6B1C3B0000A695 /* SDWebImageDownloader.m in Sources */,
 				08AEF2501D6B1C3B0000A695 /* MKAnnotationView+WebCache.m in Sources */,
+				08AEF2621D6B20AD0000A695 /* LYModel.m in Sources */,
 				08AEF2531D6B1C3B0000A695 /* SDWebImageCompat.m in Sources */,
 				08AEF2581D6B1C3B0000A695 /* SDWebImagePrefetcher.m in Sources */,
 				08AEF25F1D6B1C3B0000A695 /* UIView+WebCacheOperation.m in Sources */,
 				08AEF25B1D6B1C3B0000A695 /* UIImage+MultiFormat.m in Sources */,
+				08AEF2651D6B24C40000A695 /* LYViewCell.m in Sources */,
 				08AEF24B1D6B1C3B0000A695 /* AFNetworkReachabilityManager.m in Sources */,
 				08AEF2051D6B1A2D0000A695 /* main.m in Sources */,
 				08AEF2591D6B1C3B0000A695 /* UIButton+WebCache.m in Sources */,

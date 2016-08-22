@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  LYViewCell.h
 //  异步下载网络图片
 //
 //  Created by 9264 on 16/8/22.
@@ -7,9 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+@class LYModel;
 
-@interface ViewController : UITableViewController
-
-
+@interface LYViewCell : UITableViewCell
+@property(nonatomic,strong) LYModel *model;
 @end
-
