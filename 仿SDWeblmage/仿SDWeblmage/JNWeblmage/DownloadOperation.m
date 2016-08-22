@@ -43,7 +43,9 @@
         [data writeToFile:[self.URLString appendCachesPath] atomically:YES];
     }
     
-    
+    if (YES) {
+        
+    }
     
     NSAssert(self.finishedBlock != nil, @"下载完成的回调不能为空!");
     [[NSOperationQueue mainQueue]addOperationWithBlock:^{
