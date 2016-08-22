@@ -43,6 +43,8 @@
     /*
      创建网络请求者
      */
+    
+    
     AFHTTPSessionManager *mamager = [AFHTTPSessionManager manager];
     
     NSString * URLString = @"https://raw.githubusercontent.com/9264/practise/master/apps.json";
