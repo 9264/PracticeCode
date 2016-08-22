@@ -17,10 +17,16 @@
 
 @implementation DownloadOperation
 - (void)main{
-    
+    // 延时
+    [NSThread sleepForTimeInterval:1.0];
     NSURL *url = [NSURL URLWithString:self.URLString];
     NSData *data = [NSData dataWithContentsOfURL:url];
     UIImage *image = [UIImage imageWithData:data];
+    
+    //MARK:- 判断
+    if (self.isCancelled) {
+        return;
+    }
     NSAssert(self.finishedBlock != nil, @"下载完成的回调不能为空!");
     [[NSOperationQueue mainQueue]addOperationWithBlock:^{
         self.finishedBlock(image);

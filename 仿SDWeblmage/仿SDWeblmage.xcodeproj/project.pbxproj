@@ -21,6 +21,7 @@
 		08AEF1C51D6A9B5D0000A695 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 08AEF1BE1D6A9B5D0000A695 /* AFURLResponseSerialization.m */; };
 		08AEF1C61D6A9B5D0000A695 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 08AEF1C01D6A9B5D0000A695 /* AFURLSessionManager.m */; };
 		08AEF1C91D6A9BF00000A695 /* LYmodel.m in Sources */ = {isa = PBXBuildFile; fileRef = 08AEF1C81D6A9BF00000A695 /* LYmodel.m */; };
+		08AEF1CC1D6AA4B30000A695 /* DownladManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 08AEF1CB1D6AA4B30000A695 /* DownladManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +52,8 @@
 		08AEF1C01D6A9B5D0000A695 /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
 		08AEF1C71D6A9BF00000A695 /* LYmodel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYmodel.h; sourceTree = "<group>"; };
 		08AEF1C81D6A9BF00000A695 /* LYmodel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYmodel.m; sourceTree = "<group>"; };
+		08AEF1CA1D6AA4B30000A695 /* DownladManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownladManager.h; sourceTree = "<group>"; };
+		08AEF1CB1D6AA4B30000A695 /* DownladManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownladManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +116,8 @@
 			children = (
 				0836CA3E1D687E810025C9CE /* DownloadOperation.h */,
 				0836CA3F1D687E810025C9CE /* DownloadOperation.m */,
+				08AEF1CA1D6AA4B30000A695 /* DownladManager.h */,
+				08AEF1CB1D6AA4B30000A695 /* DownladManager.m */,
 			);
 			path = JNWeblmage;
 			sourceTree = "<group>";
@@ -211,6 +216,7 @@
 				08AEF1C31D6A9B5D0000A695 /* AFSecurityPolicy.m in Sources */,
 				08AEF1C51D6A9B5D0000A695 /* AFURLResponseSerialization.m in Sources */,
 				0836CA2E1D687D860025C9CE /* ViewController.m in Sources */,
+				08AEF1CC1D6AA4B30000A695 /* DownladManager.m in Sources */,
 				0836CA2B1D687D860025C9CE /* AppDelegate.m in Sources */,
 				08AEF1C11D6A9B5D0000A695 /* AFHTTPSessionManager.m in Sources */,
 				08AEF1C61D6A9B5D0000A695 /* AFURLSessionManager.m in Sources */,
