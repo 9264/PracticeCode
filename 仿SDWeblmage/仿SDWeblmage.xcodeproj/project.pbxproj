@@ -22,6 +22,8 @@
 		08AEF1C61D6A9B5D0000A695 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 08AEF1C01D6A9B5D0000A695 /* AFURLSessionManager.m */; };
 		08AEF1C91D6A9BF00000A695 /* LYmodel.m in Sources */ = {isa = PBXBuildFile; fileRef = 08AEF1C81D6A9BF00000A695 /* LYmodel.m */; };
 		08AEF1CC1D6AA4B30000A695 /* DownladManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 08AEF1CB1D6AA4B30000A695 /* DownladManager.m */; };
+		08AEF1D01D6AE2FC0000A695 /* UIImageView+JNWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 08AEF1CF1D6AE2FC0000A695 /* UIImageView+JNWebCache.m */; };
+		08AEF1D31D6B11550000A695 /* NSString+path.m in Sources */ = {isa = PBXBuildFile; fileRef = 08AEF1D21D6B11550000A695 /* NSString+path.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +56,10 @@
 		08AEF1C81D6A9BF00000A695 /* LYmodel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYmodel.m; sourceTree = "<group>"; };
 		08AEF1CA1D6AA4B30000A695 /* DownladManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownladManager.h; sourceTree = "<group>"; };
 		08AEF1CB1D6AA4B30000A695 /* DownladManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownladManager.m; sourceTree = "<group>"; };
+		08AEF1CE1D6AE2FC0000A695 /* UIImageView+JNWebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+JNWebCache.h"; sourceTree = "<group>"; };
+		08AEF1CF1D6AE2FC0000A695 /* UIImageView+JNWebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+JNWebCache.m"; sourceTree = "<group>"; };
+		08AEF1D11D6B11550000A695 /* NSString+path.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+path.h"; sourceTree = "<group>"; };
+		08AEF1D21D6B11550000A695 /* NSString+path.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+path.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,10 +120,14 @@
 		0836CA3D1D687E1F0025C9CE /* JNWeblmage */ = {
 			isa = PBXGroup;
 			children = (
+				08AEF1D11D6B11550000A695 /* NSString+path.h */,
+				08AEF1D21D6B11550000A695 /* NSString+path.m */,
 				0836CA3E1D687E810025C9CE /* DownloadOperation.h */,
 				0836CA3F1D687E810025C9CE /* DownloadOperation.m */,
 				08AEF1CA1D6AA4B30000A695 /* DownladManager.h */,
 				08AEF1CB1D6AA4B30000A695 /* DownladManager.m */,
+				08AEF1CE1D6AE2FC0000A695 /* UIImageView+JNWebCache.h */,
+				08AEF1CF1D6AE2FC0000A695 /* UIImageView+JNWebCache.m */,
 			);
 			path = JNWeblmage;
 			sourceTree = "<group>";
@@ -213,6 +223,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				08AEF1D31D6B11550000A695 /* NSString+path.m in Sources */,
 				08AEF1C31D6A9B5D0000A695 /* AFSecurityPolicy.m in Sources */,
 				08AEF1C51D6A9B5D0000A695 /* AFURLResponseSerialization.m in Sources */,
 				0836CA2E1D687D860025C9CE /* ViewController.m in Sources */,
@@ -222,6 +233,7 @@
 				08AEF1C61D6A9B5D0000A695 /* AFURLSessionManager.m in Sources */,
 				0836CA281D687D860025C9CE /* main.m in Sources */,
 				08AEF1C21D6A9B5D0000A695 /* AFNetworkReachabilityManager.m in Sources */,
+				08AEF1D01D6AE2FC0000A695 /* UIImageView+JNWebCache.m in Sources */,
 				0836CA401D687E810025C9CE /* DownloadOperation.m in Sources */,
 				08AEF1C41D6A9B5D0000A695 /* AFURLRequestSerialization.m in Sources */,
 				08AEF1C91D6A9BF00000A695 /* LYmodel.m in Sources */,

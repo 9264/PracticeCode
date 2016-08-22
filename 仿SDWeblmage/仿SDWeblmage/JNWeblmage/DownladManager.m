@@ -8,6 +8,7 @@
 
 #import "DownladManager.h"
 #import "DownloadOperation.h"
+#import "NSString+path.h"
 
 
 @implementation DownladManager{
@@ -15,6 +16,8 @@
     NSOperationQueue *_queue;
 
     NSMutableDictionary *_OPCache;
+    
+    NSMutableDictionary *_imagesCache;
 }
 + (instancetype)sharedManager{
     static id instace;
@@ -30,12 +33,26 @@
     if (self = [super init]) {
         _queue = [[NSOperationQueue alloc]init];
         _OPCache = [[NSMutableDictionary alloc]init];
+        _imagesCache = [[NSMutableDictionary alloc]init];
     }
     
     return self;
 }
 
 - (void)downloadWithURLString:(NSString *)URLString finishedBlock:(void (^)(UIImage *))finishedBlock{
+    
+    
+    // 判断有没有缓存
+    if ([self checkCacheWithURLString:URLString]) {
+        
+        // 从内存缓存里面取出图片,回调到控制器
+        if (finishedBlock) {
+            finishedBlock([_imagesCache objectForKey:URLString]);
+        }
+        
+        return;
+    }
+    
     if ([_OPCache objectForKey:URLString] != nil) {
         return;
     }
@@ -46,6 +63,11 @@
         
         if (finishedBlock != nil) {
             finishedBlock(image);
+            
+            
+            //MARK:- 田添加缓存池
+//            [_imagesCache set]
+            
         }
         
         [_OPCache removeObjectForKey:URLString];
@@ -61,5 +83,37 @@
     
     [_queue addOperation:op];
     
+}
+
+- (BOOL)checkCacheWithURLString:(NSString *)URLString{
+    //判断
+    if ([_imagesCache objectForKey:URLString] != nil) {
+        NSLog(@"从内存中加载...");
+        return YES;
+    }
+    
+    UIImage *cacheImage = [UIImage imageWithContentsOfFile:[URLString appendCachesPath]];
+    if (cacheImage) {
+        NSLog(@"从沙盒中加载...");
+        
+        [_imagesCache setObject:cacheImage forKey:URLString];
+        
+        return YES;
+    }
+
+    
+    return NO;
+}
+
+
+
+
+- (void)cancelWithLastRULStrig:(NSString *)lastRULStrig{
+    DownloadOperation *lastOP = [_OPCache objectForKey:lastRULStrig];
+    if (lastOP != nil) {
+        [lastOP cancel];
+        [_OPCache removeObjectForKey:lastRULStrig];
+    }
+   
 }
 @end

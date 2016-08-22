@@ -7,6 +7,7 @@
 //
 
 #import "DownloadOperation.h"
+#import "NSString+path.h"
 @interface DownloadOperation ()
 
 @property (copy, nonatomic) NSString *URLString;
@@ -36,6 +37,13 @@
     if (self.isCancelled) {
         return;
     }
+    
+    //沙盒缓存
+    if (image) {
+        [data writeToFile:[self.URLString appendCachesPath] atomically:YES];
+    }
+    
+    
     NSAssert(self.finishedBlock != nil, @"下载完成的回调不能为空!");
     [[NSOperationQueue mainQueue]addOperationWithBlock:^{
         self.finishedBlock(image);

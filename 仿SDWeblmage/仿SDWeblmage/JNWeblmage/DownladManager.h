@@ -12,4 +12,5 @@
 + (instancetype)sharedManager;
 
 - (void)downloadWithURLString:(NSString *)URLString finishedBlock:(void(^)(UIImage *image))finishedBlock;
+- (void)cancelWithLastRULStrig:(NSString *)lastRULStrig;
 @end

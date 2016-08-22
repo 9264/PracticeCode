@@ -11,6 +11,7 @@
 #import "LYmodel.h"
 #import "AFNetworking.h"
 #import "DownladManager.h"
+#import "UIImageView+JNWebCache.h"
 
 
 @interface ViewController ()
@@ -19,11 +20,10 @@
 @end
 
 @implementation ViewController{
-    NSOperationQueue *_queue;
+
     NSArray *_list;
     
-    NSMutableDictionary * _OPCache;
-    NSString *_lastURLString;
+
 
     //
     
@@ -33,8 +33,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self loadJson];
-    _queue = [[NSOperationQueue alloc]init];
-    _OPCache = [[NSMutableDictionary alloc]init];
+
     
     
    
@@ -75,24 +74,12 @@
     LYmodel *app = _list[random];
     
 
+    //UIimageview 类方法
+    
+    [self.imageV JN_setimageWithURLSting:app.icon];
+    
 //    NSString *URLString = @"https://ss0.bdstatic.com/94oJfD_bAAcT8t7mm9GUKT-xh_/timg?image&quality=100&size=b4000_4000&sec=1471695422&di=a440fabd316a37c0ec9cdb0b6f82b604&src=http://cdn.duitang.com/uploads/item/201312/10/20131210173306_8JTLu.jpeg";
-    
-    
-    //从模型中取出图片
-    if (![app.icon isEqualToString:_lastURLString] && _lastURLString != nil) {
-        DownloadOperation *lastOP = [_OPCache objectForKey:_lastURLString];
-        [lastOP cancel];
-    }
-    _lastURLString = app.icon;
-    
-    
-    //MARK:- 单例
-    [[DownladManager sharedManager] downloadWithURLString:app.icon finishedBlock:^(UIImage *image) {
-        self.imageV.image = image;
-    }];
 
-    
-  
                                     
                                
 }
