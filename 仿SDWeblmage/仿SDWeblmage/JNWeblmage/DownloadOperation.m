@@ -17,6 +17,7 @@
 
 @implementation DownloadOperation
 - (void)main{
+    
     NSURL *url = [NSURL URLWithString:self.URLString];
     NSData *data = [NSData dataWithContentsOfURL:url];
     UIImage *image = [UIImage imageWithData:data];
