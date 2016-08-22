@@ -19,11 +19,20 @@
 - (void)main{
     // 延时
     [NSThread sleepForTimeInterval:1.0];
+    if (self.isCancelled) {
+        return;
+    }
     NSURL *url = [NSURL URLWithString:self.URLString];
+    if (self.isCancelled) {
+        return;
+    }
     NSData *data = [NSData dataWithContentsOfURL:url];
+    if (self.isCancelled) {
+        return;
+    }
     UIImage *image = [UIImage imageWithData:data];
     
-    //MARK:- 判断
+    //- 判断
     if (self.isCancelled) {
         return;
     }

@@ -10,6 +10,7 @@
 #import "DownloadOperation.h"
 #import "LYmodel.h"
 #import "AFNetworking.h"
+#import "DownladManager.h"
 
 
 @interface ViewController ()
@@ -86,21 +87,12 @@
     
     
     //MARK:- 单例
-    
-    DownloadOperation *op = [DownloadOperation downloadWithURLString:app.icon finishedBlock:^(UIImage *image) {
-        NSLog(@"%@ %@",image,[NSThread currentThread]);
+    [[DownladManager sharedManager] downloadWithURLString:app.icon finishedBlock:^(UIImage *image) {
         self.imageV.image = image;
-        
-        
     }];
+
     
-    
-    
-     // 添加缓存池
-    [_OPCache setObject:op forKey:app.icon];
-    
-    
-    [_queue addOperation:op];
+  
                                     
                                
 }
