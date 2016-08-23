@@ -24,7 +24,10 @@
 - (void)loadData {
     NSURL *url = [NSURL URLWithString:@"http://www.budejie.com"];
     //MARK:- 方案一
-    NSURLRequest *request = [NSURLRequest requestWithURL:url];
+//    NSURLRequest *request = [NSURLRequest requestWithURL:url];
+    //MARK:- 方案二
+    NSURLRequest *request = [NSURLRequest requestWithURL:url cachePolicy:0 timeoutInterval:15.0];
+    
     
 [NSURLConnection sendAsynchronousRequest:request queue:[NSOperationQueue mainQueue] completionHandler:^(NSURLResponse * _Nullable response, NSData * _Nullable data, NSError * _Nullable connectionError) {
     
