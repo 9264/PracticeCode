@@ -53,6 +53,11 @@
 
 - (void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response{
     NSLog(@"总大小%tu",response.expectedContentLength);
+    
+    /*
+     少一步
+     */
+
 }
 
 - (void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data
@@ -67,8 +72,23 @@
     [_dataM writeToFile:@"/Users/LY/Desktop/jn1.zip" atomically:YES];
 }
 
-
-
+#pragma mark - NSFileHandle
+- (void)saveFileForFileHandle:(NSData *)data{
+    
+    NSString *savepath = @"/Users/LY/Desktop/jn1.zip";
+    
+    NSFileHandle *fileHandle = [NSFileHandle fileHandleForWritingAtPath:savepath];
+    
+    if (fileHandle == nil) {
+        [data writeToFile:savepath atomically:YES];
+    }else{
+        
+        
+        [fileHandle seekToEndOfFile];
+        [fileHandle writeData:data];
+        [fileHandle closeFile];
+    }
+}
 
 
 
