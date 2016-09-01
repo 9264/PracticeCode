@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		0856014D1D78499E00264A4C /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0856014C1D78499E00264A4C /* HomeViewController.m */; };
+		085601521D78529900264A4C /* topic_news.json in Resources */ = {isa = PBXBuildFile; fileRef = 085601511D78529900264A4C /* topic_news.json */; };
+		085601551D7852FE00264A4C /* ChannelModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 085601541D7852FE00264A4C /* ChannelModel.m */; };
+		085601581D78718E00264A4C /* ChannelLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 085601571D78718E00264A4C /* ChannelLabel.m */; };
 		0881E33B1D784629007036EF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0881E33A1D784629007036EF /* main.m */; };
 		0881E33E1D784629007036EF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0881E33D1D784629007036EF /* AppDelegate.m */; };
 		0881E3441D784629007036EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0881E3421D784629007036EF /* Main.storyboard */; };
@@ -19,6 +22,11 @@
 /* Begin PBXFileReference section */
 		0856014B1D78499E00264A4C /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		0856014C1D78499E00264A4C /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		085601511D78529900264A4C /* topic_news.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = topic_news.json; sourceTree = "<group>"; };
+		085601531D7852FE00264A4C /* ChannelModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChannelModel.h; sourceTree = "<group>"; };
+		085601541D7852FE00264A4C /* ChannelModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChannelModel.m; sourceTree = "<group>"; };
+		085601561D78718E00264A4C /* ChannelLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChannelLabel.h; sourceTree = "<group>"; };
+		085601571D78718E00264A4C /* ChannelLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChannelLabel.m; sourceTree = "<group>"; };
 		0881E3361D784629007036EF /* NeteaseNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NeteaseNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0881E33A1D784629007036EF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0881E33C1D784629007036EF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -77,6 +85,34 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		0856014E1D784F0A00264A4C /* Channel */ = {
+			isa = PBXGroup;
+			children = (
+				0856014F1D784F0A00264A4C /* Model */,
+				085601501D784F0A00264A4C /* View */,
+			);
+			name = Channel;
+			path = NeteaseNews/Channel;
+			sourceTree = SOURCE_ROOT;
+		};
+		0856014F1D784F0A00264A4C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				085601531D7852FE00264A4C /* ChannelModel.h */,
+				085601541D7852FE00264A4C /* ChannelModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		085601501D784F0A00264A4C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				085601561D78718E00264A4C /* ChannelLabel.h */,
+				085601571D78718E00264A4C /* ChannelLabel.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		0881E32D1D784629007036EF = {
 			isa = PBXGroup;
 			children = (
@@ -98,6 +134,7 @@
 		0881E3381D784629007036EF /* NeteaseNews */ = {
 			isa = PBXGroup;
 			children = (
+				0856014E1D784F0A00264A4C /* Channel */,
 				085601471D7848DF00264A4C /* Home */,
 				0881E33C1D784629007036EF /* AppDelegate.h */,
 				0881E33D1D784629007036EF /* AppDelegate.m */,
@@ -105,6 +142,7 @@
 				0881E3451D784629007036EF /* Assets.xcassets */,
 				0881E3471D784629007036EF /* LaunchScreen.storyboard */,
 				0881E34A1D784629007036EF /* Info.plist */,
+				085601511D78529900264A4C /* topic_news.json */,
 				0881E3391D784629007036EF /* Supporting Files */,
 			);
 			path = NeteaseNews;
@@ -198,6 +236,7 @@
 			files = (
 				0881E3491D784629007036EF /* LaunchScreen.storyboard in Resources */,
 				0881E3461D784629007036EF /* Assets.xcassets in Resources */,
+				085601521D78529900264A4C /* topic_news.json in Resources */,
 				0881E3441D784629007036EF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -260,6 +299,8 @@
 				0881E33E1D784629007036EF /* AppDelegate.m in Sources */,
 				0881E33B1D784629007036EF /* main.m in Sources */,
 				0856014D1D78499E00264A4C /* HomeViewController.m in Sources */,
+				085601551D7852FE00264A4C /* ChannelModel.m in Sources */,
+				085601581D78718E00264A4C /* ChannelLabel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

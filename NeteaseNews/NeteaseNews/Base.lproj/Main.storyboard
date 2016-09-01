@@ -58,6 +58,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="网易新闻" id="FQV-B8-rRG"/>
+                    <connections>
+                        <outlet property="channelScrollView" destination="uKo-YU-n5i" id="6Gr-Ji-oyH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
