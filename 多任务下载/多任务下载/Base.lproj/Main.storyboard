@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="MeV-KF-ogb">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="fKT-rw-r5A">
+            <objects>
+                <tableViewController id="MeV-KF-ogb" customClass="ViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="59" sectionHeaderHeight="28" sectionFooterHeight="28" id="J95-rF-c0x">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="jn" rowHeight="59" id="gFG-js-Eay" customClass="LYBookTableViewCell">
+                                <rect key="frame" x="0.0" y="28" width="600" height="59"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gFG-js-Eay" id="hEJ-es-asi">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="58.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wt1-o8-jtz">
+                                            <rect key="frame" x="10" y="10" width="580" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cqf-WP-gGY">
+                                            <rect key="frame" x="557" y="37" width="33" height="16"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ooq-1q-rEh">
+                                            <rect key="frame" x="10" y="51" width="580" height="2"/>
+                                        </progressView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="cqf-WP-gGY" secondAttribute="bottom" constant="5" id="I5V-xm-Jeh"/>
+                                        <constraint firstItem="ooq-1q-rEh" firstAttribute="leading" secondItem="hEJ-es-asi" secondAttribute="leading" constant="10" id="Jkp-0Z-2oC"/>
+                                        <constraint firstItem="Wt1-o8-jtz" firstAttribute="leading" secondItem="hEJ-es-asi" secondAttribute="leading" constant="10" id="JrG-wX-FgI"/>
+                                        <constraint firstAttribute="trailing" secondItem="Wt1-o8-jtz" secondAttribute="trailing" constant="10" id="Otr-IV-hfi"/>
+                                        <constraint firstAttribute="trailing" secondItem="ooq-1q-rEh" secondAttribute="trailing" constant="10" id="Wxu-JR-w9w"/>
+                                        <constraint firstItem="cqf-WP-gGY" firstAttribute="bottom" secondItem="ooq-1q-rEh" secondAttribute="bottom" id="doK-CK-4YT"/>
+                                        <constraint firstAttribute="trailing" secondItem="cqf-WP-gGY" secondAttribute="trailing" constant="10" id="kkA-YK-W5w"/>
+                                        <constraint firstItem="Wt1-o8-jtz" firstAttribute="top" secondItem="hEJ-es-asi" secondAttribute="top" constant="10" id="unk-oA-rtp"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="naemLabel" destination="Wt1-o8-jtz" id="m4g-OR-ykj"/>
+                                    <outlet property="progressView" destination="ooq-1q-rEh" id="sD8-ZJ-kmF"/>
+                                    <outlet property="sizeLabel" destination="cqf-WP-gGY" id="Kpa-QS-rQ8"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="MeV-KF-ogb" id="1SV-5P-oGa"/>
+                            <outlet property="delegate" destination="MeV-KF-ogb" id="aZ6-6K-fZE"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oZH-3H-vLB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="133.5" y="194.5"/>
+        </scene>
+    </scenes>
+</document>

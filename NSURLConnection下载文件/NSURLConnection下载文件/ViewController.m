@@ -24,7 +24,7 @@
     
     FileDownLoad *downLoad = [[FileDownLoad alloc]init];
     
-    [downLoad downLoadWthURLString:@"http://127.0.0.1"];
+    [downLoad downLoadWthURLString:@"http://localhost/sogou.zip"];
     
     
 }
