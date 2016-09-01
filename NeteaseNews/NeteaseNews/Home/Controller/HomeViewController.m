@@ -43,6 +43,7 @@
 
         self.channelScrollView.contentSize = CGSizeMake(labelW * channelArr.count, 0);
 
+        
         ChannelModel *model = channelArr[i];
         label.text = model.tname;
     }
