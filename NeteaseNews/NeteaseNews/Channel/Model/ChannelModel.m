@@ -38,7 +38,7 @@
         
     }];
     
-    //MARK:- 这里不懂
+    //排序方法
     [arrM sortUsingComparator:^NSComparisonResult(ChannelModel *obj1, ChannelModel *obj2) {
         
         return [obj1.tid compare:obj2.tid];

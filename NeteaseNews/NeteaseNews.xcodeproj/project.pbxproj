@@ -11,11 +11,15 @@
 		085601521D78529900264A4C /* topic_news.json in Resources */ = {isa = PBXBuildFile; fileRef = 085601511D78529900264A4C /* topic_news.json */; };
 		085601551D7852FE00264A4C /* ChannelModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 085601541D7852FE00264A4C /* ChannelModel.m */; };
 		085601581D78718E00264A4C /* ChannelLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 085601571D78718E00264A4C /* ChannelLabel.m */; };
+		085B6CA61D793D35000C9EDC /* NewsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 085B6CA51D793D35000C9EDC /* NewsTableViewController.m */; };
+		085B6CA81D793D4F000C9EDC /* News.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 085B6CA71D793D4F000C9EDC /* News.storyboard */; };
+		085B6CAB1D795814000C9EDC /* HomeCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 085B6CAA1D795814000C9EDC /* HomeCollectionViewCell.m */; };
 		0881E33B1D784629007036EF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0881E33A1D784629007036EF /* main.m */; };
 		0881E33E1D784629007036EF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0881E33D1D784629007036EF /* AppDelegate.m */; };
 		0881E3441D784629007036EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0881E3421D784629007036EF /* Main.storyboard */; };
 		0881E3461D784629007036EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0881E3451D784629007036EF /* Assets.xcassets */; };
 		0881E3491D784629007036EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0881E3471D784629007036EF /* LaunchScreen.storyboard */; };
+		08B8C9491D799A8D000B465F /* NetworkTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 08B8C9481D799A8D000B465F /* NetworkTool.m */; };
 		9D83E04C950083F99B68FA09 /* libPods-NeteaseNews.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 66ECB2A8E48679D8E2195A91 /* libPods-NeteaseNews.a */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +31,11 @@
 		085601541D7852FE00264A4C /* ChannelModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChannelModel.m; sourceTree = "<group>"; };
 		085601561D78718E00264A4C /* ChannelLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChannelLabel.h; sourceTree = "<group>"; };
 		085601571D78718E00264A4C /* ChannelLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChannelLabel.m; sourceTree = "<group>"; };
+		085B6CA41D793D35000C9EDC /* NewsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsTableViewController.h; sourceTree = "<group>"; };
+		085B6CA51D793D35000C9EDC /* NewsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsTableViewController.m; sourceTree = "<group>"; };
+		085B6CA71D793D4F000C9EDC /* News.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = News.storyboard; sourceTree = "<group>"; };
+		085B6CA91D795814000C9EDC /* HomeCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeCollectionViewCell.h; sourceTree = "<group>"; };
+		085B6CAA1D795814000C9EDC /* HomeCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeCollectionViewCell.m; sourceTree = "<group>"; };
 		0881E3361D784629007036EF /* NeteaseNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NeteaseNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0881E33A1D784629007036EF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0881E33C1D784629007036EF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -35,6 +44,8 @@
 		0881E3451D784629007036EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0881E3481D784629007036EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0881E34A1D784629007036EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		08B8C9471D799A8D000B465F /* NetworkTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkTool.h; sourceTree = "<group>"; };
+		08B8C9481D799A8D000B465F /* NetworkTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkTool.m; sourceTree = "<group>"; };
 		19B0A2FA4D2BE2D2BC5ADE0A /* Pods-NeteaseNews.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NeteaseNews.release.xcconfig"; path = "Pods/Target Support Files/Pods-NeteaseNews/Pods-NeteaseNews.release.xcconfig"; sourceTree = "<group>"; };
 		66ECB2A8E48679D8E2195A91 /* libPods-NeteaseNews.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NeteaseNews.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8BF616C0B876CE1D6003DCA /* Pods-NeteaseNews.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NeteaseNews.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NeteaseNews/Pods-NeteaseNews.debug.xcconfig"; sourceTree = "<group>"; };
@@ -52,13 +63,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		085601471D7848DF00264A4C /* Home */ = {
+		085601471D7848DF00264A4C /* Home(主页) */ = {
 			isa = PBXGroup;
 			children = (
 				085601481D7848DF00264A4C /* Controller */,
 				085601491D7848DF00264A4C /* Model */,
 				0856014A1D7848DF00264A4C /* View */,
 			);
+			name = "Home(主页)";
 			path = Home;
 			sourceTree = "<group>";
 		};
@@ -81,17 +93,19 @@
 		0856014A1D7848DF00264A4C /* View */ = {
 			isa = PBXGroup;
 			children = (
+				085B6CA91D795814000C9EDC /* HomeCollectionViewCell.h */,
+				085B6CAA1D795814000C9EDC /* HomeCollectionViewCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
 		};
-		0856014E1D784F0A00264A4C /* Channel */ = {
+		0856014E1D784F0A00264A4C /* Channel (频道) */ = {
 			isa = PBXGroup;
 			children = (
 				0856014F1D784F0A00264A4C /* Model */,
 				085601501D784F0A00264A4C /* View */,
 			);
-			name = Channel;
+			name = "Channel (频道)";
 			path = NeteaseNews/Channel;
 			sourceTree = SOURCE_ROOT;
 		};
@@ -109,6 +123,41 @@
 			children = (
 				085601561D78718E00264A4C /* ChannelLabel.h */,
 				085601571D78718E00264A4C /* ChannelLabel.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		085B6CA01D793C47000C9EDC /* News(新闻) */ = {
+			isa = PBXGroup;
+			children = (
+				085B6CA21D793C47000C9EDC /* Model */,
+				085B6CA31D793C47000C9EDC /* View */,
+				085B6CA11D793C47000C9EDC /* Controller */,
+			);
+			name = "News(新闻)";
+			path = News;
+			sourceTree = "<group>";
+		};
+		085B6CA11D793C47000C9EDC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				085B6CA41D793D35000C9EDC /* NewsTableViewController.h */,
+				085B6CA51D793D35000C9EDC /* NewsTableViewController.m */,
+				085B6CA71D793D4F000C9EDC /* News.storyboard */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		085B6CA21D793C47000C9EDC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		085B6CA31D793C47000C9EDC /* View */ = {
+			isa = PBXGroup;
+			children = (
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -134,8 +183,10 @@
 		0881E3381D784629007036EF /* NeteaseNews */ = {
 			isa = PBXGroup;
 			children = (
-				0856014E1D784F0A00264A4C /* Channel */,
-				085601471D7848DF00264A4C /* Home */,
+				08B8C9461D799A56000B465F /* NetworkTool */,
+				085601471D7848DF00264A4C /* Home(主页) */,
+				0856014E1D784F0A00264A4C /* Channel (频道) */,
+				085B6CA01D793C47000C9EDC /* News(新闻) */,
 				0881E33C1D784629007036EF /* AppDelegate.h */,
 				0881E33D1D784629007036EF /* AppDelegate.m */,
 				0881E3421D784629007036EF /* Main.storyboard */,
@@ -154,6 +205,15 @@
 				0881E33A1D784629007036EF /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		08B8C9461D799A56000B465F /* NetworkTool */ = {
+			isa = PBXGroup;
+			children = (
+				08B8C9471D799A8D000B465F /* NetworkTool.h */,
+				08B8C9481D799A8D000B465F /* NetworkTool.m */,
+			);
+			path = NetworkTool;
 			sourceTree = "<group>";
 		};
 		5B663625AD9A9BD46217D973 /* Frameworks */ = {
@@ -236,6 +296,7 @@
 			files = (
 				0881E3491D784629007036EF /* LaunchScreen.storyboard in Resources */,
 				0881E3461D784629007036EF /* Assets.xcassets in Resources */,
+				085B6CA81D793D4F000C9EDC /* News.storyboard in Resources */,
 				085601521D78529900264A4C /* topic_news.json in Resources */,
 				0881E3441D784629007036EF /* Main.storyboard in Resources */,
 			);
@@ -296,9 +357,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				08B8C9491D799A8D000B465F /* NetworkTool.m in Sources */,
+				085B6CA61D793D35000C9EDC /* NewsTableViewController.m in Sources */,
 				0881E33E1D784629007036EF /* AppDelegate.m in Sources */,
 				0881E33B1D784629007036EF /* main.m in Sources */,
 				0856014D1D78499E00264A4C /* HomeViewController.m in Sources */,
+				085B6CAB1D795814000C9EDC /* HomeCollectionViewCell.m in Sources */,
 				085601551D7852FE00264A4C /* ChannelModel.m in Sources */,
 				085601581D78718E00264A4C /* ChannelLabel.m in Sources */,
 			);

@@ -9,11 +9,13 @@
 #import "ChannelLabel.h"
 
 @implementation ChannelLabel
-
-    //MARK:- 还是不懂
+ 
 - (instancetype)initWithFrame:(CGRect)frame
 {
     if (self = [super initWithFrame:frame]) {
+        /*
+         位置居中
+         */
 
         self.textAlignment = NSTextAlignmentCenter;
 
